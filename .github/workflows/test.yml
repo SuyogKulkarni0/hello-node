@@ -7,7 +7,7 @@ jobs:
             - name: Git Checkout
               uses: actions/checkout@v6
             - name: Getting GITHUB Object details
-              run: echo "${{ toJson(github) }}"
+              run: echo "${{ toJson(github.repositoryUrl) }}"
             - name: Installing Node 
               uses: actions/setup-node@v6
               with :
