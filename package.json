@@ -1,0 +1,17 @@
+{
+  "name": "hello-node-app",
+  "version": "1.0.0",
+  "description": "Simple Hello World Node.js app with UI and tests",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
