@@ -4,13 +4,13 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
+            - name: Getting GITHUB Object details
+              run: echo "${{ toJson(github) }}"
             - name: Git Checkout
               uses: actions/checkout@v6
-            - name: Getting GITHUB Object details
-              run: echo "${{ toJson(github.repositoryUrl) }}"
             - name: Installing Node 
               uses: actions/setup-node@v6
-              with :
+              with:
                 node-version: latest
             - name: Test the Application 
               run: npm test
